@@ -1,0 +1,41 @@
+numpy- mathematical calculations
+pandas- excel sheet(csv) files has   table(start,end ,close)
+        helps in managing data in form of tables.
+matplot- helps in creating graphs from the csv file.
+yfinance- it helps in getting stock prices from the internet.(yahoofinance)
+
+Rolling- 100 days data gives
+mean-avg
+
+plt-graph creation- 8*6 inches
+                   ma_100- avg of 100 days,
+                   r-red colour
+                   data.close-closing prices in green show- display
+
+dropna- 100 days complete ..data drop(incorrect values , data space...cleaning /removing missing or incorrect values from the table)
+
+data_train & test- 80% train, 20% test.
+
+sklearn- 0,1
+
+x=[] 100 days sequence of data 
+y=[] 100+1 days data print
+data preparation for LSTM
+
+from keras.layers import Dense, Dropout, LSTM
+DENSE- it is a layer to make final prediction
+DROPOUT- to prevent by randomly ignoring some parts during training.
+SEQUENTIAL-our model will be built by stacking layers on top of it.
+
+model.add- units of model trained
+relu- rectify linear unit , it helps model to run faster 
+return_sequence- returns the value to the next layer, TRUE- TO NEXT
+model.add(Dropout(0.2))-drop 20% data to avoid overfitting ,to generalize data.
+
+dense- final layer(contains only one neuron-single value, predicts the future stock price)
+
+compile- 'adam'(weight of the model, reduce the errors)
+'loss'(minimize error by model predicted and actual error)
+
+model.fit-'epoch' (50 times train data) batch_size(32 data points,update) 'verbose'(progress of training)
+
